@@ -6,7 +6,7 @@ OsloMet brukernavn: jekje9380
 
 Github brukernavn: jennybsk
 
-Github repo URL: https://github.com/jennybsk/data1700oblig2.git
+Github repo URL: https://github.com/jennybsk/data1700-oblig3.git
 
 Fullt navn: Jenny Birgitte Sommerstad Kjelland
 
