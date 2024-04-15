@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestilling av kinobilletter</title>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1>Bestilling av kinobilletter</h1>
+            <!--Input-bokser for bestilling av kinobillett-->
+            <form class="form">
+                <div class="form-group">
+                    <label for="filmer">Velg film:</label>
+                        <select id="filmer" onChange = "VelgFilmer()">
+                            <option>Velg film her</option>
+                            <option>Inception</option>
+                            <option>Titanic</option>
+                            <option>Revenant</option>
+                            <option>Great Gatsby</option>
+                        </select><br><br>
+                    <div id="ugyldigFilm" style="color: red"></div>
+                </div>
+                <div class="form-group">
+                    <label for="antall">Antall</label>
+                    <input type="text" class="form-control" id="antall"><br><br>
+                    <div id="ugyldigAntall" style="color: red"></div>
+                </div>
+                <div class="form-group">
+                    <label for="fornavn">Fornavn</label>
+                    <input type="text" class="form-control" id ="fornavn"/>
+                    <div id="ugyldigFornavn" style="color: red"></div>
+                </div>
+                <div class="form-group">
+                    <label for="etternavn">Etternavn</label>
+                    <input type="text" class="form-control" id ="etternavn"/>
+                    <div id="ugyldigEtternavn" style="color: red"></div>
+                </div>
+                <div class="form-group">
+                    <label for="telefonnr">Telefonnr</label>
+                    <input type="text" class="form-control" id ="telefonnr"/>
+                    <div id="ugyldigTelefonnr" style="color: red"></div>
+                </div>
+                <div class="form-group">
+                    <label for="epost">Epost</label>
+                    <input type="text" class="form-control" id ="epost"/>
+                    <div id="ugyldigEpost" style="color: red"></div>
+                </div>
+            </form>
+            <!--Kjøp billett knapp-->
+            <button class="btn btn-primary" onclick="kjøpAvBillett()">Kjøp billett</button><br>
+        </div>
+        <div class="col-md-8">
+            <h2>Alle billetter</h2>
+            <!--Viser data i array-->
+            <div id="kinobillettRegister" class="table-responsive"></div>
+            <!--Knapp for å slette all data i array-->
+            <button class="btn btn-danger" onclick="slettAlle()">Slett alle billettene</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
