@@ -1,0 +1,11 @@
+create TABLE kinobillett
+(
+    id INTEGER AUTO_INCREMENT NOT NULL,
+    filmer VARCHAR (255) NOT NULL,
+    antall INTEGER AUTO_INCREMENT NOT NULL,
+    fornavn VARCHAR (255) NOT NULL,
+    etternavn VARCHAR (255) NOT NULL,
+    telefonnr INTEGER AUTO_INCREMENT NOT NULL,
+    epost VARCHAR (255) NOT NULL,
+    PRIMARY KEY (id)
+);
