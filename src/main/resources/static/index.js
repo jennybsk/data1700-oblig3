@@ -107,3 +107,8 @@ function hentAlle() {
 $(document).ready(function() {
     hentAlle();
 });
+
+// Funksjon for valg av film
+function velgFilm() {
+    const valgtFilm = $("#filmer").val();
+}
