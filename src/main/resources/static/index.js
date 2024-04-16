@@ -1,6 +1,3 @@
-// Oppretter array for billettregister
-let kinobillettRegister=[];
-
 // Funksjon for kjøp av billett
 function kjøpAvBillett() {
     // Tømmer feilmeldingene før validering
@@ -59,7 +56,9 @@ function regKinobillett() {
         epost: $("#epost").val(),
     };
 
-    kinobillettRegister.push(kinobillett);
+    $.post("/lagreKinobillett", kinobillett, function () {
+       hentAlle();
+    });
 
     // Viser den nye infoen i arrayet
     visKinobillettRegister();

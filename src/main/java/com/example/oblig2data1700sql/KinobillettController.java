@@ -13,8 +13,8 @@ public class KinobillettController {
     @Autowired
     private KinobillettRepository rep;
 
-    @PostMapping("/lagre")
-    public void lagre(Kinobillett kinobillett) {
+    @PostMapping("/lagreKinobillett")
+    public void lagreKinobillett(Kinobillett kinobillett) {
 
         rep.lagreKinobillett(kinobillett);
     }
