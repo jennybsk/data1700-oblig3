@@ -87,7 +87,7 @@ function visKinobillettRegister() {
     $("#kinobillettRegister").html(ut);
 }
 
-// Funksjon for å tømme arrayet for all registrert info
+// Funksjon for å slette registrerte
 function slettAlle() {
     $.get("/slettAlle", function() {
         kinobillettRegister.length = 0;

@@ -18,6 +18,7 @@ public class KinobillettRepository {
     }
 
     public List<Kinobillett> hentAlleKinobilletter() {
+        // Sorterer registrerte alfabetisk basert på etternavn
         String sql = "SELECT  * FROM Kinobillett ORDER BY etternavn";
         List<Kinobillett> alleKinobilletter = db.query(sql, new BeanPropertyRowMapper(Kinobillett.class));
         return alleKinobilletter;
