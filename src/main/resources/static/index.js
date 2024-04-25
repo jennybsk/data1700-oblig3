@@ -13,6 +13,7 @@ function kjøpAvBillett() {
     const etternavn = $("#etternavn").val();
     const epost = $("#epost").val();
 
+    // Boolean som sjekker om feilmeldinger skal kjøres
     let error = false;
 
     if (antall === "" || isNaN(antall) || parseInt(antall) <= 0) {
@@ -102,7 +103,7 @@ function hentAlle() {
     });
 }
 
-// Kall hentAlle() ved lasting av siden for å laste inn tidligere registrerte kinobilletter
+// Kaller hentAlle() funksjon ved lasting av siden for å laste inn tidligere registrerte kinobilletter
 $(document).ready(function() {
     hentAlle();
 });
